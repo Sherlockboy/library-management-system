@@ -1,0 +1,73 @@
+.btn-hover:hover{
+    -fx-background-color: grey;
+    -fx-scale-y-index: 1.1;
+    -fx-cursor: hand;
+}
+.hover_border:hover{
+    -fx-border-color: #0fbcf9;
+    -fx-border-width: 0px 0px 0px 4px;
+    -fx-background-color: #465881;
+    -fx-cursor: hand;
+}
+.cursor_hand{
+    -fx-cursor: hand;
+}
+.log_out:hover{
+    -fx-scale-y: 0.88;
+    -fx-scale-x: 0.88;
+    -fx-cursor: hand;
+}
+.log_in:hover{
+    -fx-cursor: hand;
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+}
+.box_shadow{
+    -fx-background-color: #fff;
+    -fx-effect: dropshadow(three-pass-box, #424242, 10,0,0,0);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.btn_add{
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+}
+.btn_update{
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-background-color: #008CBA;
+    -fx-cursor: hand;
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+}
+.btn_delete{
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-background-color: #f44336;
+    -fx-cursor: hand;
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+}
+.btn_return{
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-background-color: #555555;
+    -fx-cursor: hand;
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+}
+.btn_borrow{
+    -fx-background-radius: 10;
+    -fx-background-color: #e7e7e7;
+    -fx-cursor: hand;
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+}
+
+.font{
+}

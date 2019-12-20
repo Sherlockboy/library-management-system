@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="900.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.MainController">
+    <left>
+
+    </left>
+    <top>
+        <HBox style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+            <children>
+                <HBox maxWidth="-Infinity" prefWidth="160.0" style="-fx-background-color: #10316b;">
+                    <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="UNIVERSITY" size="40">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" text="IUTL">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="28.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="5.0" top="13.0" />
+                            </HBox.margin>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                    <children>
+                        <HBox alignment="CENTER">
+                            <children>
+                                <TextField accessibleRole="TEXT" promptText="search" style="-fx-background-radius: 50;">
+                                    <HBox.margin>
+                                        <Insets left="20.0" right="10.0" />
+                                    </HBox.margin>
+                                </TextField>
+                        <FontAwesomeIconView boundsType="VISUAL" glyphName="SEARCH" size="20" styleClass="cursor_hand" textOrigin="CENTER" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                            <children>
+                        <FontAwesomeIconView glyphName="USER" layoutX="546.0" layoutY="41.0" size="40">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                                <Text fx:id="user_info" strokeType="OUTSIDE" strokeWidth="0.0" text="Khurshidbek Kobilov" wrappingWidth="127.36572265625">
+                                    <HBox.margin>
+                                        <Insets right="40.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font></Text>
+                        <ImageView fitHeight="45.0" fitWidth="42.0" onMouseClicked="#logOut" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/logout.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <styleClass>
+                              <String fx:value="cursor_hand" />
+                              <String fx:value="log_out" />
+                           </styleClass>
+                        </ImageView>
+                            </children></HBox>
+                    </children>
+                </HBox>
+            </children>
+        </HBox>
+    </top>
+    <left>
+        <VBox prefHeight="555.0" prefWidth="160.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER_LEFT" onMouseClicked="#loadDashboard" styleClass="hover_border">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="15.0" top="15.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets top="50.0" />
+                    </VBox.margin>
+                    <children>
+                  <FontAwesomeIconView glyphName="CONNECTDEVELOP" size="25">
+                     <HBox.margin>
+                        <Insets left="-10.0" right="4.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="18.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Text>
+                    </children>
+                </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="60.0" onMouseClicked="#loadStudents" styleClass="hover_border">
+               <padding>
+                  <Insets bottom="15.0" left="20.0" right="15.0" top="15.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView glyphName="GRADUATION_CAP" size="25">
+                     <HBox.margin>
+                        <Insets left="-10.0" right="2.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Students">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+                <HBox alignment="CENTER_LEFT" onMouseClicked="#loadLibrarians" styleClass="hover_border">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="15.0" top="15.0" />
+                    </padding>
+                    <children>
+                  <FontAwesomeIconView glyphName="GROUP" size="25">
+                     <HBox.margin>
+                        <Insets left="-10.0" right="6.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Librarians">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="18.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Text>
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" onMouseClicked="#loadBooks" styleClass="hover_border">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="15.0" top="15.0" />
+                    </padding>
+                    <children>
+                  <FontAwesomeIconView glyphName="BOOK" size="25">
+                     <HBox.margin>
+                        <Insets left="-10.0" right="9.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="All Books">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="18.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Text>
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="225.0" onMouseClicked="#loadSettings" styleClass="hover_border">
+               <padding>
+                  <Insets bottom="13.0" left="20.0" right="15.0" top="13.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView glyphName="GEAR" size="30">
+                     <HBox.margin>
+                        <Insets left="-10.0" right="9.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Settings">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="200.0" />
+               </VBox.margin>
+            </HBox>
+            </children>
+        </VBox>
+    </left>
+   <center>
+      <AnchorPane prefHeight="555.0" prefWidth="671.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="492.0" style="-fx-background-color: #fff;" styleClass="font" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.TakeBookController">
+    <children>
+        <AnchorPane prefHeight="381.0" prefWidth="259.0" style="-fx-background-color: #10316b;" />
+        <AnchorPane layoutX="65.0" layoutY="32.0" prefHeight="314.0" prefWidth="388.0" style="-fx-background-color: #fff;">
+            <children>
+                <Label layoutX="16.0" layoutY="23.0" prefHeight="36.0" prefWidth="356.0" text="              Taking Book...">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Label>
+                <Button layoutX="152.0" layoutY="242.0" mnemonicParsing="false" onAction="#takeBook" prefHeight="36.0" prefWidth="84.0" style="-fx-background-radius: 10;" styleClass="btn_borrow" text=" Take">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+            <Label layoutX="17.0" layoutY="134.0" text="Borrowed Date:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="190.0" text="Return Date:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="borrowed_date" layoutX="132.0" layoutY="132.0" prefHeight="29.0" prefWidth="239.0" style="-fx-background-radius: 5;" />
+            <DatePicker fx:id="return_date" layoutX="132.0" layoutY="188.0" prefHeight="29.0" prefWidth="239.0" style="-fx-background-radius: 5;" />
+            <FontAwesomeIconView fill="#656262" glyphName="PLUS_CIRCLE" layoutX="159.0" layoutY="267.0" size="16" />
+            <Label layoutX="17.0" layoutY="87.0" text="Student ID:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="student_id" layoutX="132.0" layoutY="85.0" prefHeight="29.0" prefWidth="239.0" style="-fx-background-radius: 5;" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
